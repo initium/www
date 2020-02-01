@@ -23,7 +23,8 @@ html {
 body .body-inner,
 body #wrapper {
   padding: 0;
-  margin: 0; }
+  margin: 0;
+  overflow: hidden; }
 body .container-wide {
   width: 100%;
   margin: 0 auto;
