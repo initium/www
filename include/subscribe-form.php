@@ -3,10 +3,10 @@
 include('mailchimp/mailchimp.php');
 
 // Step 1 - Enter your Mailchimp API KEY - more info: http://kb.mailchimp.com/article/where-can-i-find-my-api-key
-$apiKey 	= '';
+$apiKey 	= '0f0e41be2862aa91cf5b7c2ffee93133-us4';
 
 // Step 2 - Enter your Mailchimp ListId code - more info: http://kb.mailchimp.com/article/how-can-i-find-my-list-id
-$listId 	= '';
+$listId 	= '62dc38d1e9';
 
 
 $email = $_POST['widget-subscribe-form-email'];
@@ -16,11 +16,11 @@ $lastname = isset( $_POST['widget-subscribe-form-lastname'] ) ? $_POST['widget-s
 $MailChimp = new \Drewm\MailChimp($apiKey);
 
 if(isset($email) AND $email != '') {
-            
+
     $result = $MailChimp->call('lists/subscribe', array(
                     'id'                => $listId,
                     'email'             => array('email'=>$email),
-                    'merge_vars'        => array('FNAME'=>$firstname, 'LNAME'=>$lastname), 
+                    'merge_vars'        => array('FNAME'=>$firstname, 'LNAME'=>$lastname),
                     'double_optin'      => false,
                     'update_existing'   => false,
                     'replace_interests' => false,
