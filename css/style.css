@@ -1,7 +1,7 @@
 @charset "UTF-8";
 /*  Mixins */
 /*  Fonts */
-/* --------------------------------------------------------------- 
+/* ---------------------------------------------------------------
    Google Fonts
 -----------------------------------------------------------------*/
 @import "https://fonts.googleapis.com/css?family=Poppins:100,200,400,500,600,700,800|Nunito:300,400,600,700,800";
@@ -5563,7 +5563,8 @@ Helpers
   opacity: 1; }
 
 .text-center {
-  text-align: center; }
+  text-align: center;
+  vertical-align: middle;}
 
 .text-left.nav-tabs .nav-item {
   text-align: left !important; }
@@ -7306,7 +7307,8 @@ body.breakpoint-sm .col-3 .flickr-widget img .widget-instagram img {
 .background-image {
   background-position: center center;
   background-repeat: no-repeat;
-  background-size: cover; }
+  background-size: cover;
+  background-attachment: fixed; }
 
 .background-fixed {
   background-attachment: fixed;
@@ -12776,7 +12778,7 @@ select {
   font-size: 1.2rem; }
 
 /* .form-group {
-    margin-bottom: 20px; 
+    margin-bottom: 20px;
     +.btn {
         margin-left: -4px;
         border-top-left-radius: 0 !important;
@@ -12833,7 +12835,7 @@ select {
     }
 }
  */
-/* 
+/*
 input[type="checkbox"].form-control {
     float: left;
     width: auto;
