@@ -12139,7 +12139,7 @@ span.highlight {
     .team-members .team-member .team-desc > h3 {
       font-size: 16px;
       line-height: 22px;
-      margin-bottom: 0; }
+      margin-bottom: 0;}
     .team-members .team-member .team-desc > span {
       font-size: 13px;
       color: #bbbbbb;
@@ -12154,6 +12154,34 @@ span.highlight {
             font-size: 14px;
             height: 8em;}
       }
+      .team-members .team-member .team-desc-en {
+        padding-bottom: 20px;
+        padding-left: 10px;
+        padding-right: 10px; }
+        .team-members .team-member .team-desc-en > h3 {
+          line-height: 22px;
+          margin-bottom: 0;
+          height: 2em;}
+        .team-members .team-member .team-desc > span {
+          font-size: 13px;
+          color: #bbbbbb;
+          line-height: 18px;
+      height: 2em;}
+          .team-members .team-member .team-desc-en > p {
+            margin-top: 10px;
+            font-size: 14px;
+            height: 10em;
+            padding-left: 10px;
+            padding-right: 10px;}
+          @media (max-width: 1280px) {
+            .team-members .team-member .team-desc-en > p {
+              margin-top: 10px;
+              font-size: 14px;
+              height: 20em;
+              padding-left: 10px;
+              padding-right: 10px;}
+          }
+
 .team-members.team-members-circle .team-member {
   background-color: transparent;
   padding: 20px; }
