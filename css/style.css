@@ -12155,10 +12155,11 @@ span.highlight {
             height: 8em;}
       }
       .team-members .team-member .team-desc-en {
-        padding-bottom: 20px;
         padding-left: 10px;
         padding-right: 10px; }
         .team-members .team-member .team-desc-en > h3 {
+          padding-top:10px;
+          padding-bottom: 10px;
           line-height: 22px;
           margin-bottom: 0;
           height: 2em;}
