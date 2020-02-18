@@ -12115,6 +12115,11 @@ span.highlight {
 /* ----------------------------------------------------------------
     Team Members
 -----------------------------------------------------------------*/
+.team-members {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 .team-members .team-member {
   background-color: #ffffff;
   text-align: center;
@@ -12141,7 +12146,14 @@ span.highlight {
       line-height: 18px; }
     .team-members .team-member .team-desc > p {
       margin-top: 10px;
-      font-size: 14px; }
+      font-size: 14px;
+      height: 4em;}
+      @media (max-width: 1280px) {
+          .team-members .team-member .team-desc > p {
+            margin-top: 10px;
+            font-size: 14px;
+            height: 8em;}
+      }
 .team-members.team-members-circle .team-member {
   background-color: transparent;
   padding: 20px; }
