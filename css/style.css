@@ -9916,7 +9916,7 @@ a.btn:not([href]):not([tabindex]) {
       bottom: -30px;
       left: 0;
       right: 0; }
-      .heading-text.heading-section-team > h2:before {
+      .heading-text.heading-section .team > h2:before {
         content: "";
         position: absolute;
         height: 2px;
