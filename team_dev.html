@@ -6,39 +6,43 @@
     <meta http-equiv="content-type" content="text/html; charset=utf-8" />
     <meta name="author" content="源基金" />
     <meta name="description" content="中国首个留学生天使投资基金">
-    <link rel="icon" type="image/png" href="images/favicon.jpg">
+    <link rel="icon" type="image/png" href="images/favicon.png">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>源基金 | 战略团队</title>
     <!-- Stylesheets & Fonts -->
     <link href="css/plugins.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
     <style>
+    .container_name_cards {
+        padding: 0px 5vw;
+    }
+    .container_members {
+        margin: auto;
+    }
     .members_row{
         display: flex;
-        flex-direction: row;
-        justify-content: flex-start;
-    }
-
-    .member{
-        margin: 2vh 2vw;
-    }
-
-    .member .member_pic{
-        margin-bottom: 2vh;
-        margin-right: 4vw;
+        justify-content: space-around;
     }
 
     .member img {
         border-radius: 50%;
-        height: 15vw;
-        width: 15vw;
+        height: 10vw;
+        width: 10vw;
         object-fit:cover;
     }
 
     .member .member_text{
-        height: 15vh;
-        width: 15vw;
+        height: auto;
+        width: 10vw;
         text-align: center;
+    }
+
+    .member {
+        margin-bottom: 2vh; 
+    }
+
+    .member .member_pic{
+        margin-bottom: 2vh; 
     }
 
     .advisor{
@@ -49,7 +53,7 @@
     }
 
     .advisor .advisor_pic{
-        margin-bottom: 2vh;
+        margin-bottom: 2vh; 
         margin-right: 2vw;
     }
 
@@ -63,7 +67,8 @@
     .advisor .advisor_text{
         height: 15vh;
         width: 60vw;
-        text-align: center;
+        text-align: left;
+        margin: auto;
     }
 
     .team {
@@ -71,14 +76,15 @@
     }
 
     @media (max-width: 768px) {
+
         .members_row{
-            display: inline-block;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
         }
 
         .member{
-            position: relative;
-            left: 30px;
-            margin: 30px 20px;
+            margin: auto;
         }
 
         .member img {
@@ -102,7 +108,7 @@
         }
 
         .advisor .advisor_pic{
-            margin-bottom: 2vh;
+            margin-bottom: 2vh; 
             margin-right: 2vw;
         }
 
@@ -123,84 +129,84 @@
 </head>
 
 <body>
-    <!-- Header -->
-    <header id="header" data-transparent="true" data-fullwidth="true" class="dark submenu-light">
-        <div class="header-inner">
-            <div class="container">
-                <!--Logo-->
-                <div id="logo">
-                    <a href="index.html">
-                        <img src="../images/logo-1024px-b.png" class="logo-fixed">
-                    </a>
-                </div>
-                <!--End: Logo-->
-                <!--Header Extras-->
-                <div class="header-extras">
-                    <ul>
-                        <li>
-                            <div class="p-dropdown">
-                                <a href="#"><i class="icon-globe"></i><span>CN</span></a>
-                                <ul class="p-dropdown-content">
-                                    <li><a href="https://initium.fund/index-dev.html">简体中文</a></li>
-                                    <li><a href="https://initium.fund/en">English</a></li>
-                                </ul>
-                            </div>
-                        </li>
-                    </ul>
-                </div>
-                <!--end: Header Extras-->
-                <!--Navigation Resposnive Trigger-->
-                <div id="mainMenu-trigger">
-                    <a class="lines-button x"><span class="lines"></span></a>
-                </div>
-                <!--end: Navigation Resposnive Trigger-->
-                <!--Navigation-->
-                <div id="mainMenu">
-                    <div class="container">
-                        <nav>
-                            <ul>
-                                <li><a href="index-dev.html">首页</a></li>
-                                <li><a href="team-dev.html">我们的团队</a></li>
-                                <li>
-                                    <div class="text-center team">
-                                        <a href="https://initium.fund/apply" class="btn btn-light">提交申请</a>
-                                    </div>
-                                </li>
-                            </ul>
-                        </nav>
+        <!-- Header -->
+        <header id="header" data-transparent="true" data-fullwidth="true" class="dark submenu-light">
+            <div class="header-inner">
+                <div class="container">
+                    <!--Logo-->
+                    <div id="logo">
+                        <a href="index.html">
+                            <img src="images/logo-1024px-b.png" class="logo-fixed">
+                        </a>
                     </div>
+                    <!--End: Logo-->
+                    <!--Header Extras-->
+                    <div class="header-extras">
+                        <ul>
+                            <li>
+                                <div class="p-dropdown">
+                                    <a href="#"><i class="icon-globe"></i><span>CN</span></a>
+                                    <ul class="p-dropdown-content">
+                                        <li><a href="https://initium.fund/team_dev.html">简体中文</a></li>
+                                        <li><a href="https://initium.fund/en">English</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <!--end: Header Extras-->
+                    <!--Navigation Resposnive Trigger-->
+                    <div id="mainMenu-trigger">
+                        <a class="lines-button x"><span class="lines"></span></a>
+                    </div>
+                    <!--end: Navigation Resposnive Trigger-->
+                    <!--Navigation-->
+                    <div id="mainMenu">
+                        <div class="container">
+                            <nav>
+                                <ul>
+                                    <li><a href="index-dev.html">首页</a></li>
+                                    <li><a href="team-dev.html">我们的团队</a></li>
+                                    <li>
+                                        <div class="text-center team">
+                                            <a href="https://initium.fund/apply" class="btn btn-light">提交申请</a>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </nav>
+                        </div>
+                    </div>
+                    <!--end: Navigation-->
                 </div>
-                <!--end: Navigation-->
             </div>
-        </div>
-    </header>
+        </header>
 
-    <!-- end: Header -->
+        <!-- end: Header -->
 
         <!-- Intro Block Starts -->
         <section class="fullscreen" data-bg-parallax="images/bg.png">
-        <div class="bg-overlay"></div>
-        <div class="container container-fullscreen">
-        <div class="text-middle text-left text-light">
-        <h2 class="text-lg">源基金</h2>
-        <h3 class="text-sm">青年留学生创业的第一张支票</h3>
-        <p class="lead">由留学生创建并运营，我们为创始人提供一个由投资人、导师、同龄人组成的强大网络，一个中国市场，和一张支票。</p>
-        <div class="text-center">
-        <a href="" class="btn btn-light">提交项目想法</a> <a href="/cdn-cgi/l/email-protection#ec85829d99859e95ac85828598859981c28a998288" class="btn">与我们合作</a>
-        </div>
-        </div>
-        </div>
+            <div class="bg-overlay"></div>
+            <div class="container container-fullscreen">
+            <div class="text-middle text-left text-light">
+            <h2 class="text-lg">源基金</h2>
+            <h3 class="text-sm">青年留学生创业的第一张支票</h3>
+            <p class="lead">由留学生创建并运营，我们为创始人提供一个由投资人、导师、同龄人组成的强大网络，一个中国市场，和一张支票。</p>
+            <div class="text-center">
+            <a href="" class="btn btn-light">提交项目想法</a> <a href="/cdn-cgi/l/email-protection#ec85829d99859e95ac85828598859981c28a998288" class="btn">与我们合作</a>
+            </div>
+            </div>
+            </div>
         </section>
         <!-- Intro Block Ends -->
 
         <!-- Partners -->
         <section>
-            <div class="container">
+            <div class="container_name_cards">
                 <!--Partners-->
                 <div class="heading-text heading-section">
                     <h2>战略团队</h2>
                 </div>
-                <div>
+                <div class = "container_members">
                     <div class="members_row">
                         <div class="member">
                             <div class = 'member_pic'>
@@ -256,8 +262,6 @@
                                 </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="members_row">
                         <div class="member">
                             <div class = 'member_pic'>
                                 <img src="images/portraits/yuan.jpg">
@@ -300,12 +304,12 @@
         <!--END: Partners-->
 
         <!--Ambassadors-->
-        <section class="background-grey">
-            <div class="container">
+        <section class="background-grey"> 
+            <div class="container_name_cards">
                 <div class="heading-text heading-section">
                     <h2>校园大使</h2>
                 </div>
-                <div>
+                <div class = "container_members">
                     <div class="members_row">
                         <div class="member">
                             <div class = 'member_pic'>
@@ -330,14 +334,14 @@
             </div>
         </section>
         <!--END: Ambassadors-->
-
+        
         <!--Advisors-->
         <section>
-            <div class="container">
+            <div class="container_name_cards">
                 <div class="heading-text heading-section">
                     <h2>特别顾问</h2>
                 </div>
-                <div>
+                <div class = "container_members">
                     <div class="advisors_row">
                         <div class="advisor">
                             <div class = 'advisor_pic'>

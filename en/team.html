@@ -13,32 +13,36 @@
     <link href="../css/plugins.css" rel="stylesheet">
     <link href="../css/style.css" rel="stylesheet">
     <style>
+    .container_name_cards {
+        padding: 0px 5vw;
+    }
+    .container_members {
+        margin: auto;
+    }
     .members_row{
         display: flex;
-        flex-direction: row;
-        justify-content: flex-start;
-    }
-
-    .member{
-        margin: 2vh 2vw;
-    }
-
-    .member .member_pic{
-        margin-bottom: 2vh;
-        margin-right: 4vw;
+        justify-content: space-around;
     }
 
     .member img {
         border-radius: 50%;
-        height: 15vw;
-        width: 15vw;
+        height: 10vw;
+        width: 10vw;
         object-fit:cover;
     }
 
     .member .member_text{
-        height: 15vh;
-        width: 15vw;
+        height: auto;
+        width: 10vw;
         text-align: center;
+    }
+
+    .member {
+        margin-bottom: 2vh; 
+    }
+
+    .member .member_pic{
+        margin-bottom: 2vh; 
     }
 
     .advisor{
@@ -49,7 +53,7 @@
     }
 
     .advisor .advisor_pic{
-        margin-bottom: 2vh;
+        margin-bottom: 2vh; 
         margin-right: 2vw;
     }
 
@@ -63,7 +67,8 @@
     .advisor .advisor_text{
         height: 15vh;
         width: 60vw;
-        text-align: center;
+        text-align: left;
+        margin: auto;
     }
 
     .team {
@@ -71,14 +76,15 @@
     }
 
     @media (max-width: 768px) {
+
         .members_row{
-            display: inline-block;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
         }
 
         .member{
-            position: relative;
-            left: 30px;
-            margin: 30px 20px;
+            margin: auto;
         }
 
         .member img {
@@ -102,7 +108,7 @@
         }
 
         .advisor .advisor_pic{
-            margin-bottom: 2vh;
+            margin-bottom: 2vh; 
             margin-right: 2vw;
         }
 
@@ -123,59 +129,59 @@
 </head>
 
 <body>
-    <!-- Header -->
-    <header id="header" data-transparent="true" data-fullwidth="true" class="dark submenu-light">
-        <div class="header-inner">
-            <div class="container">
-                <!--Logo-->
-                <div id="logo">
-                    <a href="index.html">
-                        <img src="../images/logo-1024px-b.png" class="logo-fixed">
-                    </a>
-                </div>
-                <!--End: Logo-->
-                <!--Header Extras-->
-                <div class="header-extras">
-                    <ul>
-                        <li>
-                            <div class="p-dropdown">
-                                <a href="#"><i class="icon-globe"></i><span>EN</span></a>
-                                <ul class="p-dropdown-content">
-                                    <li><a href="https://initium.fund/index-dev.html">简体中文</a></li>
-                                    <li><a href="https://initium.fund/en">English</a></li>
-                                </ul>
-                            </div>
-                        </li>
-                    </ul>
-                </div>
-                <!--end: Header Extras-->
-                <!--Navigation Resposnive Trigger-->
-                <div id="mainMenu-trigger">
-                    <a class="lines-button x"><span class="lines"></span></a>
-                </div>
-                <!--end: Navigation Resposnive Trigger-->
-                <!--Navigation-->
-                <div id="mainMenu">
-                    <div class="container">
-                        <nav>
-                            <ul>
-                                <li><a href="index.html">Home</a></li>
-                                <li><a href="team.html">Team</a></li>
-                                <li>
-                                    <div class="text-center team">
-                                        <a href="https://initium.fund/en/apply" class="btn btn-light">Apply</a>
-                                    </div>
-                                </li>
-                            </ul>
-                        </nav>
+        <!-- Header -->
+        <header id="header" data-transparent="true" data-fullwidth="true" class="dark submenu-light">
+            <div class="header-inner">
+                <div class="container">
+                    <!--Logo-->
+                    <div id="logo">
+                        <a href="index.html">
+                            <img src="../images/logo-1024px-b.png" class="logo-fixed">
+                        </a>
                     </div>
+                    <!--End: Logo-->
+                    <!--Header Extras-->
+                    <div class="header-extras">
+                        <ul>
+                            <li>
+                                <div class="p-dropdown">
+                                    <a href="#"><i class="icon-globe"></i><span>EN</span></a>
+                                    <ul class="p-dropdown-content">
+                                        <li><a href="https://initium.fund/team_dev.html">简体中文</a></li>
+                                        <li><a href="https://initium.fund/en">English</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <!--end: Header Extras-->
+                    <!--Navigation Resposnive Trigger-->
+                    <div id="mainMenu-trigger">
+                        <a class="lines-button x"><span class="lines"></span></a>
+                    </div>
+                    <!--end: Navigation Resposnive Trigger-->
+                    <!--Navigation-->
+                    <div id="mainMenu">
+                        <div class="container">
+                            <nav>
+                                <ul>
+                                    <li><a href="index.html">Home</a></li>
+                                    <li><a href="team.html">Team</a></li>
+                                    <li>
+                                        <div class="text-center team">
+                                            <a href="https://initium.fund/apply" class="btn btn-light">Apply</a>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </nav>
+                        </div>
+                    </div>
+                    <!--end: Navigation-->
                 </div>
-                <!--end: Navigation-->
             </div>
-        </div>
-    </header>
+        </header>
 
-    <!-- end: Header -->
+        <!-- end: Header -->
 
         <!-- Inspiro Slider -->
         <section class="fullscreen" data-bg-parallax="../images/bg.png">
@@ -256,8 +262,6 @@
                                 </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="members_row">
                         <div class="member">
                             <div class = 'member_pic'>
                                 <img src="../images/portraits/yuan.jpg">

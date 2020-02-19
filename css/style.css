@@ -9911,7 +9911,7 @@ a.btn:not([href]):not([tabindex]) {
       content: "";
       position: absolute;
       height: 2px;
-      width: 65vw;
+      width: 90vw;
       background-color: grey;
       bottom: -30px;
       left: 0;
