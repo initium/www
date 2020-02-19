@@ -218,7 +218,7 @@ ul {
   #content .container-wide,
   #content .container-fluid {
     position: relative; }
-    
+
 .page-content-shadow {
   box-shadow: 0 82px 53px 10px rgba(0, 0, 0, 0.3); }
 
@@ -9911,11 +9911,20 @@ a.btn:not([href]):not([tabindex]) {
       content: "";
       position: absolute;
       height: 2px;
-      width: 90vw;
+      width: 65vw;
       background-color: grey;
       bottom: -30px;
       left: 0;
       right: 0; }
+      .heading-text.heading-section-team > h2:before {
+        content: "";
+        position: absolute;
+        height: 2px;
+        width: 90vw;
+        background-color: grey;
+        bottom: -30px;
+        left: 0;
+        right: 0; }
   .heading-text.heading-section.text-center h1:before,
   .heading-text.heading-section.text-center h2:before,
   .heading-text.heading-section.text-center h3:before,
