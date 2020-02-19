@@ -219,6 +219,113 @@ ul {
   #content .container-fluid {
     position: relative; }
 
+.members_row{
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-start;
+  }
+
+  .member{
+      margin: 2vh 2vw;
+  }
+
+  .member .member_pic{
+      margin-bottom: 2vh; 
+      margin-right: 4vw;
+  }
+
+  .member img {
+      border-radius: 50%;
+      height: 15vw;
+      width: 15vw;
+      object-fit:cover;
+  }
+
+  .member .member_text{
+      height: 15vh;
+      width: 15vw;
+      text-align: center;
+  }
+
+  .advisor{
+      margin: 2vh 2vw;
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-start;
+  }
+
+  .advisor .advisor_pic{
+      margin-bottom: 2vh; 
+      margin-right: 2vw;
+  }
+
+  .advisor img {
+      border-radius: 50%;
+      height: 18vw;
+      width: 18vw;
+      object-fit:cover;
+  }
+
+  .advisor .advisor_text{
+      height: 15vh;
+      width: 60vw;
+      text-align: center;
+  }
+
+  .team {
+      margin-right: 30px;
+  }
+
+  @media (max-width: 768px) {
+      .members_row{
+          display: inline-block;
+      }
+
+      .member{
+          position: relative;
+          left: 30px;
+          margin: 30px 20px;
+      }
+
+      .member img {
+          border-radius: 50%;
+          height: 60vw;
+          width: 60vw;
+          object-fit:cover;
+      }
+
+      .member .member_text{
+          height: 15vh;
+          width: 65vw;
+          text-align: center;
+      }
+
+      .advisor{
+          position: relative;
+          left: 30px;
+          margin: 2vh 2vw;
+          display: inline-block;
+      }
+
+      .advisor .advisor_pic{
+          margin-bottom: 2vh; 
+          margin-right: 2vw;
+      }
+
+      .advisor img {
+          border-radius: 50%;
+          height: 60vw;
+          width: 60vw;
+          object-fit:cover;
+      }
+
+      .advisor .advisor_text{
+          height: 15vh;
+          width: 65vw;
+          text-align: center;
+      }
+  }
+    
 .page-content-shadow {
   box-shadow: 0 82px 53px 10px rgba(0, 0, 0, 0.3); }
 
