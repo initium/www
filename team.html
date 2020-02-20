@@ -13,301 +13,303 @@
     <link href="css/plugins.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
     <style>
-    .container_name_cards {
-        padding: 0px 5vw;
-    }
-    .container_members {
-        margin: auto;
-    }
-    .members_row{
-        display: flex;
-        justify-content: space-around;
-    }
-
-    .member img {
-        border-radius: 50%;
-        height: 10vw;
-        width: 10vw;
-        object-fit:cover;
-    }
-
-    .member .member_text{
-        height: auto;
-        width: 10vw;
-        text-align: center;
-    }
-
-    .member {
-        margin-bottom: 2vh;
-    }
-
-    .member .member_pic{
-        margin-bottom: 2vh;
-    }
-
-    .advisor{
-        margin: 2vh 2vw;
-        display: flex;
-        flex-direction: row;
-        justify-content: flex-start;
-    }
-
-    .advisor .advisor_pic{
-        margin-bottom: 2vh;
-        margin-right: 2vw;
-    }
-
-    .advisor img {
-        border-radius: 50%;
-        height: 18vw;
-        width: 18vw;
-        object-fit:cover;
-    }
-
-    .advisor .advisor_text{
-        height: 15vh;
-        width: 60vw;
-        text-align: left;
-        margin: auto;
-    }
-
-    .team {
-        margin-right: 30px;
-    }
-
-    @media (max-width: 768px) {
-
-        .members_row{
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
+        .container_name_cards {
+            padding: 0px 5vw;
         }
 
-        .member{
+        .container_members {
             margin: auto;
+        }
+
+        .members_row {
+            display: flex;
+            justify-content: space-around;
         }
 
         .member img {
             border-radius: 50%;
-            height: 60vw;
-            width: 60vw;
-            object-fit:cover;
+            height: 10vw;
+            width: 10vw;
+            object-fit: cover;
         }
 
-        .member .member_text{
-            height: 15vh;
-            width: 65vw;
+        .member .member_text {
+            height: auto;
+            width: 10vw;
             text-align: center;
         }
 
-        .advisor{
-            position: relative;
-            left: 30px;
-            margin: 2vh 2vw;
-            display: inline-block;
+        .member {
+            margin-bottom: 2vh;
         }
 
-        .advisor .advisor_pic{
+        .member .member_pic {
+            margin-bottom: 2vh;
+        }
+
+        .advisor {
+            margin: 2vh 2vw;
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-start;
+        }
+
+        .advisor .advisor_pic {
             margin-bottom: 2vh;
             margin-right: 2vw;
         }
 
         .advisor img {
             border-radius: 50%;
-            height: 60vw;
-            width: 60vw;
-            object-fit:cover;
+            height: 18vw;
+            width: 18vw;
+            object-fit: cover;
         }
 
-        .advisor .advisor_text{
+        .advisor .advisor_text {
             height: 15vh;
-            width: 65vw;
-            text-align: center;
+            width: 60vw;
+            text-align: left;
+            margin: auto;
         }
-    }
+
+        .team {
+            margin-right: 30px;
+        }
+
+        @media (max-width: 768px) {
+
+            .members_row {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+            }
+
+            .member {
+                margin: auto;
+            }
+
+            .member img {
+                border-radius: 50%;
+                height: 60vw;
+                width: 60vw;
+                object-fit: cover;
+            }
+
+            .member .member_text {
+                height: 15vh;
+                width: 65vw;
+                text-align: center;
+            }
+
+            .advisor {
+                position: relative;
+                left: 30px;
+                margin: 2vh 2vw;
+                display: inline-block;
+            }
+
+            .advisor .advisor_pic {
+                margin-bottom: 2vh;
+                margin-right: 2vw;
+            }
+
+            .advisor img {
+                border-radius: 50%;
+                height: 60vw;
+                width: 60vw;
+                object-fit: cover;
+            }
+
+            .advisor .advisor_text {
+                height: 15vh;
+                width: 65vw;
+                text-align: center;
+            }
+        }
     </style>
 </head>
 
 <body>
-        <!-- Header -->
-        <header id="header" data-transparent="true" data-fullwidth="true" class="dark submenu-light">
-            <div class="header-inner">
-                <div class="container">
-                    <!--Logo-->
-                    <div id="logo">
-                        <a href="index.html">
-                            <img src="images/logo-1024px-b.png" class="logo-fixed">
-                        </a>
-                    </div>
-                    <!--End: Logo-->
-                    <!--Header Extras-->
-                    <div class="header-extras">
-                        <ul>
-                            <li>
-                                <div class="p-dropdown">
-                                    <a href="#"><i class="icon-globe"></i><span>CN</span></a>
-                                    <ul class="p-dropdown-content">
-                                        <li><a href="https://initium.fund/team.html">简体中文</a></li>
-                                        <li><a href="https://initium.fund/en/team.html">English</a></li>
-                                    </ul>
-                                </div>
-                            </li>
-                        </ul>
-                    </div>
-                    <!--end: Header Extras-->
-                    <!--Navigation Resposnive Trigger-->
-                    <div id="mainMenu-trigger">
-                        <a class="lines-button x"><span class="lines"></span></a>
-                    </div>
-                    <!--end: Navigation Resposnive Trigger-->
-                    <!--Navigation-->
-                    <div id="mainMenu">
-                        <div class="container">
-                            <nav>
-                                <ul>
-                                    <li><a href="index-dev.html">首页</a></li>
-                                    <li><a href="team.html">我们的团队</a></li>
-                                    <li>
-                                        <div class="text-center team">
-                                            <a href="https://initium.fund/apply" class="btn btn-light">提交申请</a>
-                                        </div>
-                                    </li>
-                                </ul>
-                            </nav>
-                        </div>
-                    </div>
-                    <!--end: Navigation-->
-                </div>
-            </div>
-        </header>
-
-        <!-- end: Header -->
-
-        <!-- Page title -->
-        <section id="page-title" data-bg-parallax="images/bg.png">
-            <div class="bg-overlay"></div>
+    <!-- Header -->
+    <header id="header" data-transparent="true" data-fullwidth="true" class="dark submenu-light">
+        <div class="header-inner">
             <div class="container">
-                <div class="page-title">
-                    <h1 class="text-uppercase text-medium">我们的团队</h1>
-                    <!-- <span>我们的团队包括同龄人中</span> -->
+                <!--Logo-->
+                <div id="logo">
+                    <a href="index.html">
+                        <img src="images/logo-1024px-b.png" class="logo-fixed">
+                    </a>
                 </div>
+                <!--End: Logo-->
+                <!--Header Extras-->
+                <div class="header-extras">
+                    <ul>
+                        <li>
+                            <div class="p-dropdown">
+                                <a href="#"><i class="icon-globe"></i><span>CN</span></a>
+                                <ul class="p-dropdown-content">
+                                    <li><a href="https://initium.fund/team.html">简体中文</a></li>
+                                    <li><a href="https://initium.fund/en/team.html">English</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <!--end: Header Extras-->
+                <!--Navigation Resposnive Trigger-->
+                <div id="mainMenu-trigger">
+                    <a class="lines-button x"><span class="lines"></span></a>
+                </div>
+                <!--end: Navigation Resposnive Trigger-->
+                <!--Navigation-->
+                <div id="mainMenu">
+                    <div class="container">
+                        <nav>
+                            <ul>
+                                <li><a href="index-dev.html">首页</a></li>
+                                <li><a href="team.html">我们的团队</a></li>
+                                <li>
+                                    <div class="text-center team">
+                                        <a href="https://initium.fund/apply" class="btn btn-light">提交申请</a>
+                                    </div>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+                <!--end: Navigation-->
             </div>
-        </section>
-        <!-- end: Page title -->
+        </div>
+    </header>
+
+    <!-- end: Header -->
+
+    <!-- Page title -->
+    <section id="page-title" data-bg-parallax="images/bg.png">
+        <div class="bg-overlay"></div>
+        <div class="container">
+            <div class="page-title">
+                <h1 class="text-uppercase text-medium">我们的团队</h1>
+                <!-- <span>我们的团队包括同龄人中</span> -->
+            </div>
+        </div>
+    </section>
+    <!-- end: Page title -->
 
 
-        <!-- Partners -->
-        <section>
-            <div class="container_name_cards">
-                <!--Partners-->
-                <div class="heading-text heading-section team">
-                    <h2>战略团队</h2>
-                </div>
-                <div class = "container_members">
-                    <div class="members_row">
-                        <div class="member">
-                            <div class = 'member_pic'>
-                                <img src="images/portraits/shaolin.jpg">
-                            </div>
-                            <div class="member_text">
-                                <h3>张劭麟</h3>
-                                <!-- <span>执行合伙人</span> -->
-                                <div class="align-center">
-                                    <a class="btn btn-xs btn-slide btn-light" target="_blank" href="https://www.linkedin.com/in/shaolinzhang" data-width="125">
-                                        <i class="fab fa-linkedin"></i>
-                                        <span>Shaolin Zhang</span></a>
-                                    <a class="btn btn-xs btn-slide btn-light" href="mailto:shaolin@initium.fund" data-width="170">
-                                        <i class="icon-mail"></i>
-                                        <span>shaolin@initium.fund</span></a>
-                                </div>
-                                <p>计算机科学、经济与创业学。前IBD@中银国际。创始人@THE Hack。</p>
-
-                            </div>
+    <!-- Partners -->
+    <section>
+        <div class="container_name_cards">
+            <!--Partners-->
+            <div class="heading-text heading-section team">
+                <h2>战略团队</h2>
+            </div>
+            <div class="container_members">
+                <div class="members_row">
+                    <div class="member">
+                        <div class='member_pic'>
+                            <img src="images/portraits/shaolin.jpg">
                         </div>
-                        <div class="member">
-                            <div class = 'member_pic'>
-                                <img src="images/portraits/ken.jpg">
+                        <div class="member_text">
+                            <h3>张劭麟</h3>
+                            <!-- <span>执行合伙人</span> -->
+                            <div class="align-center">
+                                <a class="btn btn-xs btn-slide btn-light" target="_blank" href="https://www.linkedin.com/in/shaolinzhang" data-width="125">
+                                    <i class="fab fa-linkedin"></i>
+                                    <span>Shaolin Zhang</span></a>
+                                <a class="btn btn-xs btn-slide btn-light" href="mailto:shaolin@initium.fund" data-width="170">
+                                    <i class="icon-mail"></i>
+                                    <span>shaolin@initium.fund</span></a>
                             </div>
-                            <div class="member_text">
-                                <h3>张望舒</h3>
-                                <!-- <span>执行合伙人</span> -->
-                                <div class="align-center">
-                                    <a class="btn btn-xs btn-slide btn-light" target="_blank" href="https://www.linkedin.com/in/wangshu-zhang/" data-width="135">
-                                        <i class="fab fa-linkedin"></i>
-                                        <span>Wangshu Zhang</span></a>
-                                    <a class="btn btn-xs btn-slide btn-light" href="mailto:ken@initium.fund" data-width="145">
-                                        <i class="icon-mail"></i>
-                                        <span>ken@initium.fund</span></a>
-                                </div>
+                            <p>计算机科学、经济与创业学。前IBD@中银国际。创始人@THE Hack。</p>
 
-                                <p>数学与计算机科学。前天使投资数据分析，二级市场投资者。</p>
-
-                            </div>
                         </div>
-                        <div class="member">
-                            <div class = 'member_pic'>
-                                <img src="images/portraits/qi.jpg">
-                            </div>
-                            <div class="member_text">
-                                <h3>曹琦</h3>
-                                <!-- <span>执行合伙人</span> -->
-                                <div class="align-center">
-                                    <a class="btn btn-xs btn-slide btn-light" target="_blank" href="https://www.linkedin.com/in/qi-michael-cao-00b410139/" data-width="80">
-                                        <i class="fab fa-linkedin"></i>
-                                        <span>Qi Cao</span></a>
-                                    <a class="btn btn-xs btn-slide btn-light" href="mailto:qi@initium.fund" data-width="135">
-                                        <i class="icon-mail"></i>
-                                        <span>qi@initium.fund</span></a>
-                                </div>
-                                <p>经济与计算机科学。前量化投资@国元证券、科研@中国科学院。</p>
-
-                            </div>
+                    </div>
+                    <div class="member">
+                        <div class='member_pic'>
+                            <img src="images/portraits/ken.jpg">
                         </div>
-                        <div class="member">
-                            <div class = 'member_pic'>
-                                <img src="images/portraits/yuan.jpg">
+                        <div class="member_text">
+                            <h3>张望舒</h3>
+                            <!-- <span>执行合伙人</span> -->
+                            <div class="align-center">
+                                <a class="btn btn-xs btn-slide btn-light" target="_blank" href="https://www.linkedin.com/in/wangshu-zhang/" data-width="135">
+                                    <i class="fab fa-linkedin"></i>
+                                    <span>Wangshu Zhang</span></a>
+                                <a class="btn btn-xs btn-slide btn-light" href="mailto:ken@initium.fund" data-width="145">
+                                    <i class="icon-mail"></i>
+                                    <span>ken@initium.fund</span></a>
                             </div>
-                            <div class="member_text">
-                                <h3>李元博</h3>
-                                <!-- <span>执行合伙人</span> -->
-                                <div class="align-center">
-                                    <a class="btn btn-xs btn-slide btn-light" target="_blank" href="https://www.linkedin.com/in/yuanbo-li-51245a153/" data-width="95">
-                                        <i class="fab fa-linkedin"></i>
-                                        <span>Yuanbo Li</span></a>
-                                    <a class="btn btn-xs btn-slide btn-light" href="mailto:yuanbo@initium.fund" data-width="170">
-                                        <i class="icon-mail"></i>
-                                        <span>yuanbo@initium.fund</span></a>
-                                </div>
-                                <p>计算机科学与数学。前策划@腾讯、战略@字节跳动。</p>
 
-                            </div>
+                            <p>数学与计算机科学。前天使投资数据分析，二级市场投资者。</p>
+
                         </div>
-                        <div class="member">
-                            <div class = 'member_pic'>
-                                <img src="images/portraits/yulong.jpg">
+                    </div>
+                    <div class="member">
+                        <div class='member_pic'>
+                            <img src="images/portraits/qi.jpg">
+                        </div>
+                        <div class="member_text">
+                            <h3>曹琦</h3>
+                            <!-- <span>执行合伙人</span> -->
+                            <div class="align-center">
+                                <a class="btn btn-xs btn-slide btn-light" target="_blank" href="https://www.linkedin.com/in/qi-michael-cao-00b410139/" data-width="80">
+                                    <i class="fab fa-linkedin"></i>
+                                    <span>Qi Cao</span></a>
+                                <a class="btn btn-xs btn-slide btn-light" href="mailto:qi@initium.fund" data-width="135">
+                                    <i class="icon-mail"></i>
+                                    <span>qi@initium.fund</span></a>
                             </div>
-                            <div class="member_text">
-                                <h3>李雨龙</h3>
-                                <!-- <span>执行合伙人</span> -->
-                                <div class="align-center">
-                                    <a class="btn btn-xs btn-slide btn-light" target="_blank" href="https://www.linkedin.com/in/yulong-li-631963172/" data-width="90">
-                                        <i class="fab fa-linkedin"></i>
-                                        <span>Yulong Li</span></a>
-                                    <a class="btn btn-xs btn-slide btn-light" href="mailto:yulong@initium.fund" data-width="170">
-                                        <i class="icon-mail"></i>
-                                        <span>yulong@initium.fund</span></a>
-                                </div>
-                                <p>计算机科学与物理。SWE@NLP Stealth Startup。前产品@百度。</p>
+                            <p>经济与计算机科学。前量化投资@国元证券、科研@中国科学院。</p>
 
+                        </div>
+                    </div>
+                    <div class="member">
+                        <div class='member_pic'>
+                            <img src="images/portraits/yuan.jpg">
+                        </div>
+                        <div class="member_text">
+                            <h3>李元博</h3>
+                            <!-- <span>执行合伙人</span> -->
+                            <div class="align-center">
+                                <a class="btn btn-xs btn-slide btn-light" target="_blank" href="https://www.linkedin.com/in/yuanbo-li-51245a153/" data-width="95">
+                                    <i class="fab fa-linkedin"></i>
+                                    <span>Yuanbo Li</span></a>
+                                <a class="btn btn-xs btn-slide btn-light" href="mailto:yuanbo@initium.fund" data-width="170">
+                                    <i class="icon-mail"></i>
+                                    <span>yuanbo@initium.fund</span></a>
                             </div>
+                            <p>计算机科学与数学。前策划@腾讯、战略@字节跳动。</p>
+
+                        </div>
+                    </div>
+                    <div class="member">
+                        <div class='member_pic'>
+                            <img src="images/portraits/yulong.jpg">
+                        </div>
+                        <div class="member_text">
+                            <h3>李雨龙</h3>
+                            <!-- <span>执行合伙人</span> -->
+                            <div class="align-center">
+                                <a class="btn btn-xs btn-slide btn-light" target="_blank" href="https://www.linkedin.com/in/yulong-li-631963172/" data-width="90">
+                                    <i class="fab fa-linkedin"></i>
+                                    <span>Yulong Li</span></a>
+                                <a class="btn btn-xs btn-slide btn-light" href="mailto:yulong@initium.fund" data-width="170">
+                                    <i class="icon-mail"></i>
+                                    <span>yulong@initium.fund</span></a>
+                            </div>
+                            <p>计算机科学与物理。SWE@NLP Stealth Startup。前产品@百度。</p>
+
                         </div>
                     </div>
                 </div>
-        </section>
-        <!--END: Partners-->
+            </div>
+    </section>
+    <!--END: Partners-->
 
-        <!-- Ambassadors-->
-        <!-- <section class="background-grey">
+    <!-- Ambassadors-->
+    <!-- <section class="background-grey">
             <div class="container_name_cards">
                 <div class="heading-text heading-section team">
                     <h2>校园大使</h2>
@@ -336,10 +338,10 @@
                 </div>
             </div>
         </section> -->
-        <!--END: Ambassadors -->
+    <!--END: Ambassadors -->
 
-        <!--Advisors-->
-        <!-- <section>
+    <!--Advisors-->
+    <!-- <section>
             <div class="container_name_cards">
                 <div class="heading-text heading-section team">
                     <h2>特别顾问</h2>
@@ -359,19 +361,19 @@
                 </div>
             </div>
         </section> -->
-        <!--END: Advisors-->
+    <!--END: Advisors-->
 
 
-        <hr class="space">
-        <!-- Footer -->
-        <footer id="footer">
-            <div class="copyright-content">
-                <div class="container">
+    <hr class="space">
+    <!-- Footer -->
+    <footer id="footer">
+        <div class="copyright-content">
+            <div class="container">
                 <div class="copyright-text text-center">&copy; 2020 源基金。保留所有权利。</div>
-                </div>
             </div>
-        </footer>
-        <!-- end: Footer -->
+        </div>
+    </footer>
+    <!-- end: Footer -->
     </div>
 
     <!-- Scroll top -->
@@ -385,11 +387,14 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-157546023-1"></script>
     <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
+        window.dataLayer = window.dataLayer || [];
 
-      gtag('config', 'UA-157546023-1');
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-157546023-1');
     </script>
 </body>
 
